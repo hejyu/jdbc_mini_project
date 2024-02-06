@@ -27,7 +27,7 @@ CREATE TABLE tbl_place(
 	 place_seq number(8) PRIMARY KEY,
 	 name varchar2(100) NOT NULL,
 	 phone varchar2(100),
-	 rate NUMBER(3,2),
+	 rate NUMBER(3,2) CHECK (rate >= 0 AND rate <= 5),
 	 open_time varchar2(50) NOT NULL,
 	 close_time varchar2(50) NOT NULL,
 	 food_type  varchar2(50)
