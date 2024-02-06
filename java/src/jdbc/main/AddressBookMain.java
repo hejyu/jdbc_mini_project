@@ -29,7 +29,7 @@ public class AddressBookMain {
                     addressBookDao.selectRandomPlaceList();
                     break;
                 case "3":
-                addressBookDao.selectAreaPlaceList();
+                    addressBookDao.selectAreaPlaceList();
                     break;
                 case "4":
                     placeDAO.selectRatePlaceList();
