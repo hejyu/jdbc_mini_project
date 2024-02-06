@@ -19,7 +19,7 @@ public class PlaceDAO  {
      * 기능1. 맛집 검색
      */
     public void selectPlace() {
-        GoodPlaceAddressDAO goodPlaceAddressDAO = new GoodPlaceAddressDAO();
+        AddressBookDAO goodPlaceAddressDAO = new AddressBookDAO();
         System.out.println("-".repeat(35));
         System.out.println("1- 상호명으로 검색");
         System.out.println("2- 평점으로 검색");
@@ -117,7 +117,6 @@ public class PlaceDAO  {
      * 기능5. 평점 수정
      */
     public void updateRatePlace() {
-        System.out.println("-".repeat(35));
         List<PlaceVO> placeList = selectPlaceList();
     
         for (PlaceVO vo : placeList) {

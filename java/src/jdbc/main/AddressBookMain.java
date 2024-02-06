@@ -2,14 +2,14 @@ package jdbc.main;
 
 
 
-import jdbc.dao.GoodPlaceAddressDAO;
+import jdbc.dao.AddressBookDAO;
 import jdbc.dao.PlaceDAO;
 
 
-public class GoodPlaceAddressMain {
+public class AddressBookMain {
     public static void main(String[] args) {
         PlaceDAO placeDAO = new PlaceDAO();
-        GoodPlaceAddressDAO miniDAO = new GoodPlaceAddressDAO();
+        AddressBookDAO addressBookDao = new AddressBookDAO();
 
         System.out.println("-".repeat(50));
         System.out.println("맛집 주소록 관리 시스템에 오신 것을 환영해요.");
@@ -26,10 +26,10 @@ public class GoodPlaceAddressMain {
                     placeDAO.selectPlace();
                     break;
                 case "2":
-                    miniDAO.selectRandomPlaceList();
+                    addressBookDao.selectRandomPlaceList();
                     break;
                 case "3":
-                miniDAO.selectAreaPlaceList();
+                addressBookDao.selectAreaPlaceList();
                     break;
                 case "4":
                     placeDAO.selectRatePlaceList();

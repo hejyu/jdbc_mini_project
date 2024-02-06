@@ -16,7 +16,7 @@ import jdbc.vo.RandomSchPlaceVO;
 /**
  * DB 데이터 접근 클래스
  */
-public class GoodPlaceAddressDAO {
+public class AddressBookDAO {
 
     JdbcConnection dbconn = new JdbcConnection();
 
@@ -58,13 +58,12 @@ public class GoodPlaceAddressDAO {
             return;
         }
 
-        System.out.println("=".repeat(20));
+        System.out.println("-".repeat(35));
         System.out.println(param + "을 검색한 결과를 보여줄게요");
         for (PlaceSchVO vo : placeList) {
             System.out.println(vo);
         }
-        System.out.println("=".repeat(20));
-
+        System.out.println("-".repeat(35));
     }
 
     public void placeRateSchList() {
@@ -148,12 +147,13 @@ public class GoodPlaceAddressDAO {
             System.out.println("조회 결과가 없습니다.");
             return;
         }
-        System.out.println("=".repeat(20));
+
+        System.out.println("-".repeat(35));
         System.out.println(param + "메뉴 검색 결과를 보여줄게요");
         for (PlaceSchVO vo : placeList) {
             System.out.println(vo);
         }
-        System.out.println("=".repeat(20));
+        System.out.println("-".repeat(35));
     }
 
 
@@ -202,13 +202,12 @@ public class GoodPlaceAddressDAO {
             return;
         }
 
-        System.out.println("=".repeat(20));
+        System.out.println("-".repeat(35));
         System.out.println(param + "지역 랜덤 뽑기 결과 ");
         for (RandomSchPlaceVO vo : placeList) {
             System.out.println(vo);
         }      
-        System.out.println("=".repeat(20));
-
+        System.out.println("-".repeat(35));
     }
 
 
@@ -258,13 +257,12 @@ public class GoodPlaceAddressDAO {
             return;
         }
         
-        System.out.println("=".repeat(20));
+        System.out.println("-".repeat(35));
         System.out.println(param + " 맛집 검색 결과 ");
         for (AreaSchPlaceVO vo : placeList) {
             System.out.println(vo);
         }      
-        System.out.println("=".repeat(20));
-
+        System.out.println("-".repeat(35));
     }
 
 }
