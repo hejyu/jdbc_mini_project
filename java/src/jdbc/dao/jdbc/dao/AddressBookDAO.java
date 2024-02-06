@@ -92,7 +92,6 @@ public class AddressBookDAO {
                                             rs.getInt(8)));
             }
 
-
         } catch (Exception e) {
             System.out.println("placeNameSchList 예외 발생 : " + e.getMessage());
         }
